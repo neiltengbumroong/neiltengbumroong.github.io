@@ -1,0 +1,86 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+/*
+.top-nav-collapse {
+  background-color: #424f95 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #424f95 !important;
+  }
+}
+
+*/
+
+.rgba-gradient {
+
+  /* blue green gradient */
+/*  background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 1), rgba(29, 210, 177, 0.3) 70%);
+  background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.1) 100%);
+  background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.1) 100%);*/
+
+  /* gray-white gradient */
+   /*background: -moz-linear-gradient(45deg, rgba(209, 209, 209, 0.9), rgba(226, 226, 226, 0.1) 100%);
+   background: -webkit-linear-gradient(45deg, rgba(209, 209, 209, 0.9), rgba(226, 226, 226, 0.3) 100%);
+   background: -o-linear-gradient(45deg, rgba(209, 209, 209, 0.9), rgba(226, 226, 226, 0.1) 100%);
+   background: linear-gradient(to 45deg, rgba(209, 209, 209, 0.9), rgba(226, 226, 226, 0.1) 100%);*/
+
+   /* blue-white gradient */
+   background: -moz-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 1) 70%);
+   background: -webkit-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.3) 70%);
+   background: -o-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.1) 70%);
+   background: linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.1) 70%)
+}
+
+.rgba2-gradient {
+  background: -moz-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 1) 70%);
+  background: -webkit-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.3) 70%);
+  background: -o-linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.1) 70%);
+  background: linear-gradient(45deg, rgba(147, 183, 210, 0.4), rgba(229, 239, 245, 0.1) 70%)
+}
+
+/* Fixed/sticky icon bar (vertically aligned 15% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
