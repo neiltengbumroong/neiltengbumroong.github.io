@@ -1,35 +1,120 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Neil Tengbumroong's Portfolio</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-</head>
+    <head>
+      <!-- Bootstrap and CSS links-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="test-css.css">
+      <!-- Load font awesome icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<body>
-  <h1>Neil Tengbumroong</h1>
+    <body>
+      <!-- The social media icon bar -->
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/teil.neng" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/neil_teng/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/neiltengbumroong" class="github"><i class="fa fa-github"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #174c61;">
+        <div class="container">
+          <a class="navbar-brand" href="first">
+            <strong>NT</strong>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="#AboutMe">About me</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="resume.pdf" download>Resume</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="#">Project Highlights</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="#">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <!-- Full Page Intro -->
+          <section id="first">
+          <div class="view" style="background-image: url('CodingBackground5.jpg');
+           background-repeat: no-repeat; background-size: cover; background-position: center center;">
 
-  <h2>About me</h2>
-  <p>[Insert bio here]</p>
+            <div class="mask rgba-gradient align-items-center">
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-6 white-text text-center text-md-left
+                    mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                    <h4 style="color:white;" class="mt-sm-5">Hello! My name is</h4>
+                    <h1 style="color:white;" class="h1-responsive
+                    font-weight-bold">NEIL TENGBUMROONG.</h1>
+                    <h4 style="color:white;" class="mb-4">I'm an aspiring software engineer currently
+                    living and studying in La Jolla, California.</h4>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="IMG_7370.jpeg" alt="" class="img-fluid">
+                  </div>
+                  <!--Grid column-->
+              </div>
+            </div>
+          </div>
+        </section>
 
-  <h2>My links</h2>
-  <ul>
-    <li>[LinkedIn]</li>
-    <li><a href="https://www.instagram.com/neil_teng/">Instagram</a></li>
-    <li><a href="https://github.com/neiltengbumroong">GitHub</a></li>
-  </ul>
-
-  <h2>Languages</h2>
-  <ul>
-    <li>Java</li>
-    <li>Python</li>
-    <li>C & assembly</li>
-    <li>HTML</li>
-  </ul>
-
-  <h2>Contact Info</h2>
-  <p>Phone: 626-347-9866<br>Email: ntengbum@ucsd.edu<p>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
+        <section id="second">
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('CodingBackground4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba2-gradient align-items-center">
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <a id="AboutMe"></a>
+                  <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                    <h1 class="h1-responsive font-weight-bold mt-sm-5">About Me </h1>
+                    <hr class="hr-light">
+                    <h6 class="mb-4">Hey! I'm Neil, and I am currently pursuing
+                      a B.S. in Computer Science in my third year at UC San Diego.
+                      I also currently play for the NCAA D1 Men's Tennis Team here,
+                      and in my free time I like to play the piano and surf. My
+                      biggest interest is in the field of artificial intelligence, so
+                      my dream job would be to study and create all kinds of AI -
+                      from self-driving cars and smart machines to the robots that
+                      might take over the world one day.</h6>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+                    <img src="IMG_7370.jpg" alt="" class="img-fluid">
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!--<div class="view" style="background-image: url('BackgroundPage2.jpg');
+           background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="container">
+              <div class="row">
+              <h1 style="color:white;" class="mt-sm-5 font-weight-bold">About Me<h1>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </body>
 </html>
