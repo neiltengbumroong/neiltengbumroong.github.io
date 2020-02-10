@@ -1,0 +1,367 @@
+
+
+/* something to do with padding, try taking this out to see later */
+* {
+  box-sizing: border-box;
+  background-color: #152F4D;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
+}
+
+
+/* ---------- Typography ---------- */
+
+.nametag {
+  display: block;
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
+h2 {
+  color: #FFF;
+}
+
+/* buttons */
+
+.button {
+  display: inline-block;
+  margin-top: 2em;
+  font-size: 1em;
+  text-decoration: none;
+  border-style: solid;
+  padding: .5em 1.5em;
+  color: #FFF;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  background: #FFF;
+  color: #152F4D;
+
+}
+
+* {
+  /*font-family: "Arial", sans-serif;
+  font-size: 1em;*/
+
+}
+
+
+
+/* ---------- HEADER ---------- */
+
+header {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+
+#navbar a {
+  font-weight: 900;
+  color: #FFF;
+  margin: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .5em;
+  transition: 0.3s ease;
+}
+
+#navbar a:hover,
+#navbar a:focus {
+  color: #BBB;
+  width: 10em;
+}
+
+#navbar {
+  /*margin-top: 2em;*/
+  padding-top: 2em;
+  z-index: 100;
+  /*background-color: #AAA; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  width: 100%; /* Full width */
+  height: 8%;
+  display: list-item;
+  transition: top 0.3s;
+  color: #AAA;
+}
+
+
+/* ---------- Social Media Icon Bar -------- */
+
+/* Fixed/sticky icon bar (vertically aligned 15% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 9%;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.5s linear;
+  color: white;
+  font-size: 1.2em;
+}
+
+
+/* ---------- Home Page ---------- */
+
+.home-page {
+  padding: 8em 0;
+  text-align: center;
+}
+
+
+.home-page-hr {
+  margin-top: -2%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+/* ---------- Home About ---------- */
+
+.home-about-textbox {
+  margin-left: 15em;
+  margin-right: 15em;
+  margin-top: 6em;
+}
+
+.home-about-textbox a {
+  color: white;
+}
+
+.under-nametag-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.about-nametag {
+  color: #FFF;
+  text-align: left;
+  font-size: 2em;
+  overflow: hidden;
+  position: relative;
+}
+.about-nametag:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  margin-left: 25%;
+  border-top: 0.01em solid white;
+  display: inline-block;
+}
+
+.about-me-text {
+  color: #FFF;
+  margin-top: -1%;
+  margin-right: 10%;
+}
+
+.profile-pic {
+  width: 32%;
+  height: 32%;
+  background: white;
+  padding: 0.2em;
+  border: 0.1em solid white;
+}
+
+ul {
+  list-style-type: square;
+  display: inline-block;
+  *display: inline;
+  vertical-align: top;
+  zoom: 1;
+}
+
+
+
+/* ---------- Home Projects ---------- */
+
+.projects-textbox {
+  margin-left: 15em;
+  margin-right: 15em;
+  margin-top: 4em;
+}
+.projects-nametag {
+  color: #FFF;
+  text-align: right;
+  font-size: 2.2em;
+  overflow: hidden;
+  position: relative;
+}
+.projects-nametag:before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  margin-left: -62%;
+  border-top: 0.01em solid white;
+  display: inline-block;
+}
+
+.projects-inner-wrapper {
+  overflow: hidden;
+  border-spacing: 5em;
+}
+
+
+/* ------------- Project 1 box ----------- */
+
+.project1-wrapper {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.project1-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.project1-textbox {
+  color: white;
+  margin-right: 8%;
+  z-index: 1;
+}
+
+.project1-textbox a {
+  color: white;
+}
+.project1-img {
+  width: 22%;
+  height: 22%;
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.project1-icons {
+  color: white;
+  font-size: 2rem;
+}
+
+/* ------------- Project 2 box ----------- */
+
+.project2-wrapper {
+  position: relative;
+}
+
+
+.project2-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.project2-textbox {
+  color: white;
+  margin-left: 8%;
+  z-index: 1;
+}
+
+.project2-img {
+  width: 25%;
+  height: 25%;
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.project2-icons {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+/* ------------- Project 3 box ----------- */
+
+.project3-wrapper {
+  position: relative;
+  margin-top: 10%;
+}
+
+.project3-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.project3-textbox {
+  color: white;
+  margin-right: 8%;
+  z-index: 1;
+}
+
+.project3-textbox a {
+  color: white;
+}
+.project3-img {
+  width: 22%;
+  height: 22%;
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.project3-icons {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+/* ------------- Contact ------------ */
+
+.contact-wrapper {
+  text-align: center;
+  color: white;
+  margin-top: 11em;
+}
+
+.contact-nametag {
+  font-size: 3em;
+  text-align: center;
+}
+
+.contact-textbox {
+  margin-left: 30em;
+  margin-right: 30em;
+  margin-top: 2em;
+  margin-bottom: 3rem;
+}
+
+.email-icon {
+  color: white;
+  font-size: 3rem;
+}

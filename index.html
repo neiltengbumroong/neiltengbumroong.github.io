@@ -1,126 +1,224 @@
-<html lang="en">
-    <head>
-      <!-- Bootstrap and CSS links-->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="custom-css.css">
-      <!-- Load font awesome icons -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<!DOCTYPE html>
+<html lang="en-US">
 
-    <body>
-      <!-- The social media icon bar -->
-      <div class="icon-bar">
-        <a href="https://www.facebook.com/teil.neng" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/neil_teng/" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="https://github.com/neiltengbumroong" class="github"><i class="fa fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/neil-tengbumroong-555131192/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <head>
+    <!-- Some meta tags -->
+    <meta name="author" content="Neil Tengbumroong"/>
+    <meta name="description" content="Personal Portfolio Website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- CSS and Javascript -->
+    <link rel="stylesheet" href="website-css.css">
+    <script src="website.js"></script>
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+<body>
+
+  <header>
+      <div id="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About Me</a>
+        <a href="#Projects">Projects</a>
+        <a href="NeilTengbumroong.pdf" target="_blank">Resume</a>
+        <a href="#Contact">Contact</a>
       </div>
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #174c61;">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <strong>NT</strong>
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-              </li>
-              <li class="nav-item active mx-2">
-                <a class="nav-link" href="#AboutMe">About me</a>
-              </li>
-              <li class="nav-item active mx-2">
-                <a class="nav-link" href="NeilTengbumroong.pdf" download>Resume</a>
-              </li>
-              <li class="nav-item active mx-2">
-                <a class="nav-link" href="#ContactInfo">Contact Me</a>
-              </li>
-            </ul>
+  </header>
+
+
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/teil.neng" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.instagram.com/neil_teng/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://github.com/neiltengbumroong" target="_blank" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/neil-tengbumroong-555131192/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  </div>
+
+  <a id="Home"></a>
+  <section id="intro" class="home-page">
+    <div class="container">
+      <div class="nametag"><h1> Neil Tengbumroong</h1></div>
+      <hr class="home-page-hr">
+      <h2> Aspiring Software Engineer </h3>
+      <a href="" class="button button-accent"> About me</a>
+    </div>
+  </section>
+
+
+  <a id="About"></a>
+    <section id="about" class="home-about">
+
+      <div class="home-about-textbox">
+        <div class="about-nametag"><h1>About Me</h1></div>
+        <div class="under-nametag-box">
+          <div class="about-me-text">
+            <p>Hello! My name is Neil, and I am an aspiring software engineer.
+              I am currently pursuing a B.S. in Computer Science at the
+              University of California, San Diego, where I am also a member
+              and co-captain of the
+              <a href="https://ucsdtritons.com/sports/mens-tennis/roster/neil-tengbumroong/3477" target="_blank">NCAA D1 Men's Tennis Team </a>,
+              and a team representative on the Triton Athletic Council. In my free time,
+              I like to play the piano, surf, and do anything outdoors.</p>
+            <p> Here are some of the languages, skills, and technologies I'm
+                pretty familiar with:
+            </p>
+              <ul>
+                <li> Java </li>
+                <li> C </li>
+                <li> C++ </li>
+
+              </ul>
+              <ul>
+                <li> Python </li>
+                <li> HTML </li>
+                <li> CSS </li>
+              </ul>
+              <ul>
+                <li> Git Version Control </li>
+                <li> UNIX </li>
+                <li> Vim </li>
+              </ul>
+              <ul>
+                <li> SQL (SQLite3)</li>
+              </ul>
+            <p> ... and some of the things I've had some exposure to: </p>
+              <ul>
+                <li> System Verilog </li>
+                <li> Javascript </li>
+                <li> Bootstrap </li>
+              </ul>
+
+              <ul>
+                <li> JSON </li>
+                <li> Docker </li>
+              </ul>
+
+              <ul>
+                <li> JUnit </li>
+                <li> GDB </li>
+              </ul>
           </div>
+          <img src="ProfilePic.jpeg" alt="Profile Picture" class="profile-pic"/>
         </div>
-      </nav>
-          <!-- Full Page Intro -->
-          <section id="first">
-          <div class="view" style="background-image: url('CodingBackground5.jpg');
-           background-repeat: no-repeat; background-size: cover; background-position: center center;">
-
-            <div class="mask rgba-gradient align-items-center">
-              <!-- Content -->
-              <div class="container">
-                <!--Grid row-->
-                <div class="row">
-                  <!--Grid column-->
-                  <div class="col-md-6 white-text text-center text-md-left
-                    mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-                    <h4 style="color:white;" class="mt-sm-5">Hello! My name is</h4>
-                    <h1 style="color:white;" class="h1-responsive
-                    font-weight-bold">NEIL TENGBUMROONG.</h1>
-                    <h4 style="color:white;" class="mb-4">I'm an aspiring software engineer currently
-                    living and studying in La Jolla, California.</h4>
-                  </div>
-                  <!--Grid column-->
-                  <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
-                    <img src="ProfilePic.jpeg" alt="" class="img-fluid">
-                  </div>
-                  <!--Grid column-->
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="second">
-          <!-- Full Page Intro -->
-          <div class="view" style="background-image: url('CodingBackground4.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-            <!-- Mask & flexbox options-->
-            <div class="mask rgba2-gradient align-items-center">
-              <!-- Content -->
-              <div class="container">
-                <!--Grid row-->
-                <div class="row">
-                  <!--Grid column-->
-                  <a id="AboutMe"></a>
-                  <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-                    <h1 class="h1-responsive font-weight-bold mt-sm-5">About Me </h1>
-                    <hr class="hr-light">
-                    <h6 class="mb-4">Hey! I'm Neil, and I am currently pursuing
-                      a B.S. in Computer Science in my third year at UC San Diego.
-                      I also currently play for the NCAA D1 Men's Tennis Team here,
-                      and in my free time I like to play the piano and surf. My
-                      biggest interest is in the field of artificial intelligence, so
-                      my dream job would be to study and create all kinds of AI -
-                      from self-driving cars and smart machines to the robots that
-                      might take over the world one day.</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-
-      <section id="third">
-        <!-- Full Page Intro -->
-        <div class="view" style="background-image: url('BackgroundPage2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba2-gradient align-items-center">
-            <!-- Content -->
-            <div class="container">
-              <!--Grid row-->
-              <div class="row">
-                <!--Grid column-->
-                <a id="ContactInfo"></a>
-                <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-                  <h1 class="h1-responsive font-weight-bold mt-sm-5">Contact Information </h1>
-                  <hr class="hr-light">
-                  <h6 class="mb-4">Email: ntengbum@ucsd.edu <br>
-                  <br>
-                  Phone: 626-347-9866
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
     </section>
 
-    </body>
+
+  <a id="Projects"></a>
+  <section id="projects" class="home-projects">
+    <div class="projects-textbox">
+      <div class="projects-nametag"><h1>Projects</h1></div>
+        <div class="projects-inner-wrapper">
+
+
+          <div class="project1-wrapper">
+            <div class="project1-box">
+              <div class="project1-textbox">
+                <h1> Hocus Focus </h1>
+                <p> A study aid in the form of a Google Chrome extension I made with
+                  two of my friends in 48 hours as part of the 2019 SD Hacks Hackathon.
+                  Currently downloadable on the
+                  <a href="https://chrome.google.com/webstore/detail/hocus-focus/njpegdkojgpgnbdneopkhiciappocmmc" target="_blank">
+                  Chrome Web Store</a>.
+                </p>
+                <ul>
+                  <li> Specify certain websites and URLs to block </li>
+                  <li> Keep track of progress
+                    with a modifiable TO-DO list </li>
+                  <li> View study time through an
+                    aggregated counter </li>
+                </ul>
+                <br>
+                <p> HTML &nbsp; • &nbsp; CSS &nbsp; • &nbsp; JavaScript
+                  &nbsp; • &nbsp; Chrome Extension API </p>
+                  <br>
+                <div class="project1-icons">
+                  <a href="https://chrome.google.com/webstore/detail/hocus-focus/njpegdkojgpgnbdneopkhiciappocmmc" target="_blank" class="github-icon"><i class="fa fa-github"></i></a>
+                   &nbsp;
+                  <a href="https://github.com/bew030/hocus-focus" target="_blank" class="link-icon"><i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <img src="HocusFocus.jpg" alt="Hocus Focus" class="project1-img"/>
+            </div>
+          </div>
+
+
+          <div class="project-2-wrapper" margin-top="5%">
+            <div class="project2-box">
+              <img src="2048.jpg" alt="2048" class="project2-img"/>
+              <div class="project2-textbox">
+                <h1> 2048 (Desktop Version) </h1>
+                <p> A remake of the popular mobile-based puzzle game 2048 I made
+                  with one other friend that includes some slight modifications
+                  and added functionality.
+                </p>
+                <ul>
+                  <li> Mechanics and feel identical to mobile version, utilizes
+                  arrow keys to move  </li>
+                  <li> Added functionality allows user to specify game board dimensions </li>
+                </ul>
+                <br>
+                <p> Java &nbsp; • &nbsp; Java Graphical User Interface (GUI) </p>
+                <div class="project2-icons">
+                  <a href="https://github.com/bew030/2048" target="_blank" class="github-icon" style="color:white"><i class="fa fa-github"></i></a>
+                   &nbsp;
+                  <a href="https://github.com/bew030/2048" target="_blank" class="link-icon" style="color:white"><i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="project3-wrapper">
+            <div class="project3-box">
+              <div class="project3-textbox">
+                <h1> Hydro Homies (Design) </h1>
+                <p> A project layout and design idea for an iPhone app designed
+                  to help locate and display water sources on a friendly user
+                  interface. Finished project includes logo design, user interface
+                  design for all possible controller views (no code), competitor
+                  analysis and commercial advertisement.
+                </p>
+                <br>
+                <p> Design Life Cycle &nbsp; • &nbsp; User Experience (UI/UX)
+                  &nbsp; • &nbsp; Adobe XD </p>
+                <div class="project3-icons">
+                  <a href="https://drive.google.com/drive/folders/1NGxuEZ8KVxP6D_bN3Eq3hVLewR0r1Qab?usp=sharing" target="_blank" class="link-icon"><i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <img src="HydroHomies.jpg" alt="Hydro Homies" class="project3-img"/>
+            </div>
+          </div>
+
+
+        </div>
+
+    </div>
+
+  </section>
+
+
+
+  <a id="Contact"></a>
+  <section id="Contact" class="home-contact">
+    <div class="contact-wrapper">
+      <div class="contact-nametag"<h1> Get In Touch </h1> </div>
+      <div class="contact-textbox">
+      <p> I'm still on the lookout for a summer internship opportunity, so whether
+        you're interested or would just like to chat, my email's door is always
+        open and I will try my best to always answer!</p>
+      </div>
+      <a href="mailto: ntengbum@ucsd.edu" target="_blank" class="email-icon"><i class="fa fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p> Personal Website V1 - Feb 2020 </p>
+    <p> Designed & Created by Neil Tengbumroong </p>
+  </footer>
+
+</body>
+
+
 </html>
