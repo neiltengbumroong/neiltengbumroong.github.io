@@ -295,10 +295,13 @@ ul {
 }
 
 .project2-img {
-  width: 25%;
-  height: 25%;
+  width: 35%;
+  height: 35%;
   z-index: 1;
   border-radius: 5%;
+  background: white;
+  padding: 0.2em;
+  border: 0.1em solid white;
 }
 
 .project2-icons {
@@ -336,6 +339,37 @@ ul {
 }
 
 .project3-icons {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+/* ------------- Project 4 box ----------- */
+
+.project4-wrapper {
+  position: relative;
+}
+
+
+.project4-box {
+  display: flex;
+  align-items: stretch;
+}
+
+.project4-textbox {
+  color: white;
+  margin-left: 8%;
+  z-index: 1;
+}
+
+.project4-img {
+  width: 25%;
+  height: 25%;
+  z-index: 1;
+  border-radius: 5%;
+}
+
+.project4-icons {
   color: white;
   font-size: 2rem;
   margin-top: 5%;
